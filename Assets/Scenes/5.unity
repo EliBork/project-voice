@@ -1438,15 +1438,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4214434413466262, guid: 8cbbe22d0205a534f9479b28f4fbec43, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.5310893
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 4214434413466262, guid: 8cbbe22d0205a534f9479b28f4fbec43, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.3853674
+      value: 177
       objectReference: {fileID: 0}
     - target: {fileID: 4214434413466262, guid: 8cbbe22d0205a534f9479b28f4fbec43, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 12.402771
+      value: 824
       objectReference: {fileID: 0}
     - target: {fileID: 4214434413466262, guid: 8cbbe22d0205a534f9479b28f4fbec43, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1492,8 +1492,7 @@ Prefab:
         type: 2}
       propertyPath: m_Flare
       value: 
-      objectReference: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 108261949855962190, guid: 8cbbe22d0205a534f9479b28f4fbec43,
         type: 2}
       propertyPath: m_Intensity
@@ -2935,15 +2934,15 @@ Light:
   m_Intensity: 2.49
   m_Range: 10
   m_SpotAngle: 30
-  m_CookieSize: 1
+  m_CookieSize: 54.55
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.612
-    m_Bias: 0.072
+    m_Bias: 0.077
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.45
   m_Cookie: {fileID: 0}
   m_DrawHalo: 1
   m_Flare: {fileID: 0}
