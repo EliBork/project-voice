@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 82320445001076236}
   - component: {fileID: 82967122122901414}
   - component: {fileID: 123581330896248122}
+  - component: {fileID: 114398281524380072}
   m_Layer: 10
   m_Name: Camera
   m_TagString: MainCamera
@@ -60,8 +61,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643128441157826}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7000122, y: 3.3500023, z: -13.440002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4728258344942112}
@@ -74,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427191729409052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 533.9, y: 17.8, z: 173.7}
+  m_LocalPosition: {x: 533.9, y: 18.57, z: 154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4545328507536044}
@@ -101,9 +102,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 50.5
+  near clip plane: 0.4
+  far clip plane: 2200
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -152,8 +153,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 49c9065e535af334dad95ec49ef52c89, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -249,7 +250,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f87ca9d1b8f8f44191685c91c7368b1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.267
+  m_Volume: 0.289
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -344,7 +345,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 49c9065e535af334dad95ec49ef52c89, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.103
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -446,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 1ceeebcacb9c7bf4bb923be93aca3501, type: 2}
+  profile: {fileID: 11400000, guid: 439e975998d4d63499fcd0b48dad2da7, type: 2}
 --- !u!114 &114396998407257964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -458,11 +459,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fb1075976a206449169f52a874c241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 116.59
-  camera: {fileID: 0}
+  range: 30
+  camera: {fileID: 20239961894914446}
   canRead: 1
   bag1: {fileID: 0}
   bag2: {fileID: 0}
+--- !u!114 &114398281524380072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643128441157826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e318a6043c1cb4a8ce1c8805bab930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 0
+  screenBlendMode: 0
+  sunTransform: {fileID: 0}
+  radialBlurIterations: 2
+  sunColor: {r: 1, g: 0.57221097, b: 0.18382353, a: 1}
+  sunThreshold: {r: 0.7647059, g: 0.55375254, b: 0, a: 1}
+  sunShaftBlurRadius: 3.78
+  sunShaftIntensity: 1.48
+  maxRadius: 0.9
+  useDepthTexture: 1
+  sunShaftsShader: {fileID: 4800000, guid: d3b1c8c1036784176946f5cfbfb7fe4c, type: 3}
+  simpleClearShader: {fileID: 4800000, guid: f688f89ed5eb847c5b19c934a0f1e772, type: 3}
 --- !u!114 &114781090798111960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -475,15 +499,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_WalkSpeed: 12
+  m_RunSpeed: 12
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook:
-    XSensitivity: 2
-    YSensitivity: 2
+    XSensitivity: 1.5
+    YSensitivity: 1.5
     clampVerticalRotation: 1
     MinimumX: -90
     MaximumX: 90
@@ -580,10 +604,10 @@ MonoBehaviour:
   m_JumpBob:
     BobDuration: 0.2
     BobAmount: 0.1
-  m_StepInterval: 5
+  m_StepInterval: 13.43
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: bf247942e61355f4d9d1804c09c647ee, type: 3}
+  - {fileID: 8300000, guid: 50d72a013f13ce0488147b799a838890, type: 3}
   m_JumpSound: {fileID: 0}
   m_LandSound: {fileID: 0}
 --- !u!123 &123581330896248122
@@ -593,7 +617,7 @@ LensFlare:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643128441157826}
   m_Enabled: 1
-  m_Flare: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659, type: 2}
+  m_Flare: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Brightness: 2.07
   m_FadeSpeed: 3
